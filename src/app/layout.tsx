@@ -1,5 +1,5 @@
 import "../styles/global.css";
-import { MuseoModerno } from "next/font/google";
+import { Quicksand } from "next/font/google";
 import { layoutContainer } from "./style.css";
 import "./globals.css";
 
@@ -8,10 +8,10 @@ export const metadata = {
   description: "StakeKit",
 };
 
-const museoModerno = MuseoModerno({
+const quickSand = Quicksand({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
-  variable: "--sk-font-museo-moderno",
+  variable: "--sk-font-quicksand",
 });
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${museoModerno.className}`}>
+    <html lang="en" className={`${quickSand.className}`}>
       <link rel="icon" href="/icon.png" />
       <body className={layoutContainer}>{children}</body>
     </html>

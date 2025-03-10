@@ -11,7 +11,7 @@ export const Widget = () => {
       theme={{
         ...darkTheme,
         font: {
-          body: "var(--sk-font-museo-moderno)",
+          body: "var(--sk-font-quicksand)",
         },
         borderRadius: {
           baseContract: {
